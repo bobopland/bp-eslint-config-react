@@ -1,5 +1,5 @@
 {
-  "name": "bp-config-eslint",
+  "name": "@bpoehland/eslint-config",
   "version": "1.0.0",
   "description": "Boris Pöhland eslint config",
   "main": "index.js",
@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/borispoehland/bp-config-eslint.git"
+    "url": "git+https://github.com/borispoehland/bp-eslint-config.git"
   },
   "keywords": [
     "bp",
@@ -33,7 +33,7 @@
   "author": "Boris Pöhland",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/borispoehland/bp-config-eslint/issues"
+    "url": "https://github.com/borispoehland/bp-eslint-config/issues"
   },
-  "homepage": "https://github.com/borispoehland/bp-config-eslint#readme"
+  "homepage": "https://github.com/borispoehland/bp-eslint-config#readme"
 }
