@@ -1,21 +1,15 @@
 {
-  "name": "@bpoehland/eslint-config",
+  "name": "@bpoehland/eslint-config-react",
   "version": "1.0.0",
-  "description": "Boris Pöhland eslint config",
+  "description": "Boris Pöhland react eslint config",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.4.0",
-    "@typescript-eslint/parser": "^4.4.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.10.0",
-    "eslint-config-airbnb": "^18.2.0",
-    "eslint-config-airbnb-typescript": "^11.0.0",
-    "eslint-config-prettier": "^6.12.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jest": "^24.1.0",
+    "@bpoehland/eslint-config-basic": "^1.0.2"
+  },
+  "peerDependencies": {
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.21.3",
@@ -23,17 +17,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/borispoehland/bp-eslint-config.git"
+    "url": "git+https://github.com/borispoehland/bp-eslint-config-react.git"
   },
   "keywords": [
-    "bp",
+    "bpoehland",
     "eslint",
-    "config"
+    "config",
+    "react"
   ],
   "author": "Boris Pöhland",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/borispoehland/bp-eslint-config/issues"
-  },
-  "homepage": "https://github.com/borispoehland/bp-eslint-config#readme"
+  "license": "ISC"
 }
