@@ -1,6 +1,6 @@
 {
   "name": "@bpoehland/eslint-config-react",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Boris Pöhland react eslint config",
   "main": "index.js",
   "scripts": {
