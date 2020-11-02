@@ -9,6 +9,7 @@ module.exports = {
     },
     plugins: ['react', 'prettier'],
     extends: [
+        'eslint:recommended',
         'airbnb',
         'airbnb/hooks',
         'prettier',
@@ -47,6 +48,7 @@ module.exports = {
             },
             plugins: ['react', 'prettier', '@typescript-eslint'],
             extends: [
+                'eslint:recommended',
                 'plugin:@typescript-eslint/recommended',
                 'airbnb-typescript',
                 'airbnb/hooks',
@@ -91,8 +93,8 @@ module.exports = {
                         leadingUnderscore: 'allow',
                     },
                 ],
-                'react/jsx-props-no-spreading': 'off',
                 'no-underscore-dangle': 'off',
+                'react/jsx-props-no-spreading': 'off',
             },
             env: {
                 browser: true,
