@@ -9,7 +9,6 @@ module.exports = {
     },
     plugins: ['react', 'prettier'],
     extends: [
-        '@bpoehland/eslint-config-basic',
         'airbnb',
         'airbnb/hooks',
         'prettier',
@@ -48,7 +47,6 @@ module.exports = {
             },
             plugins: ['react', 'prettier', '@typescript-eslint'],
             extends: [
-                '@bpoehland/eslint-config-basic',
                 'plugin:@typescript-eslint/recommended',
                 'airbnb-typescript',
                 'airbnb/hooks',
@@ -60,7 +58,41 @@ module.exports = {
                 'plugin:react-hooks/recommended',
             ],
             rules: {
+                '@typescript-eslint/typedef': [
+                    'error',
+                    {
+                        arrayDestructuring: true,
+                        arrowParameter: true,
+                        memberVariableDeclaration: true,
+                        objectDestructuring: true,
+                        parameter: true,
+                        propertyDeclaration: true,
+                        variableDeclaration: true,
+                        variableDeclarationIgnoreFunction: false,
+                    },
+                ],
+                '@typescript-eslint/explicit-function-return-type': [
+                    'error',
+                    {
+                        allowExpressions: false,
+                        allowTypedFunctionExpressions: false,
+                        allowHigherOrderFunctions: false,
+                        allowDirectConstAssertionInArrowFunctions: false,
+                        allowConciseArrowFunctionExpressionsStartingWithVoid: false,
+                    },
+                ],
+                'no-unused-vars': 'off',
+                '@typescript-eslint/no-unused-vars': ['error', { varsIgnorePattern: '^_' }],
+                '@typescript-eslint/naming-convention': [
+                    'error',
+                    {
+                        selector: 'typeLike',
+                        format: ['PascalCase'],
+                        leadingUnderscore: 'allow',
+                    },
+                ],
                 'react/jsx-props-no-spreading': 'off',
+                'no-underscore-dangle': 'off',
             },
             env: {
                 browser: true,
