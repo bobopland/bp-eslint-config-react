@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@bpoehland/eslint-config-basic": "^1.0.2"
+    "@bpoehland/eslint-config-basic": "latest"
   },
   "peerDependencies": {
     "eslint-plugin-jsx-a11y": "^6.3.1",
